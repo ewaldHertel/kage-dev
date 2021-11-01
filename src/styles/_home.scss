@@ -1,0 +1,186 @@
+@import "settings";
+
+.home {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: url('../assets/image/earth-3866609.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  .text{
+    .homeImage {
+      position: relative;
+      height: 7rem;
+      width: 30rem;
+      margin: 6rem 0;
+    }
+    .topTitle{
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-family: 'Amita', sans-serif;
+      font-size: 8rem;
+      margin: 0;
+      line-height: 1.4;
+
+      span {
+        color: $highlightColor;
+      }
+    }
+    h2{
+      font-family: 'Gugi', sans-serif;
+      font-size: 4rem;
+      margin: 0 0 1rem;
+
+      &.subtitle{
+        font-size: 2.1rem;
+      }
+
+      span {
+        color: $highlightColor;
+      }
+    }
+    p{
+      font-size: 1.6rem;
+      margin: 0;
+    }
+    .icons {
+      margin-top: 1rem;
+      ul.social {
+        position: fixed;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+
+        li {
+          padding: 0.4rem;
+          display: inline-flex;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          line-height: 3rem;
+          justify-content: center;
+          align-items: center;
+          background-color: $secondColor;
+          margin: 2px;
+
+          a {
+            color: $foreColor;
+            text-decoration: none;
+            font-size: 2rem;
+            &:hover {
+              color: $highlightColor;
+              @include easeOut;
+            }
+          }
+        }
+      }
+    }
+
+    .stack-icons {
+      display: flex;
+      flex-direction: row;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+
+        .fa-react {
+          color: #61DBFB;
+          -webkit-animation: rotating 5s linear infinite;
+          -moz-animation: rotating 5s linear infinite;
+          -ms-animation: rotating 5s linear infinite;
+          -o-animation: rotating 5s linear infinite;
+          animation: rotating 5s linear infinite;
+        }
+
+        .fa-js-square {
+          color: #f0db4f;
+        }
+
+        .fa-html5 {
+          color: #e44d26;
+        }
+
+        .fa-css3 {
+          color: #264de4;
+        }
+
+        .fa-node{
+          color: #3c873a
+        }
+
+        .fa-php{
+          color: #474a8a
+        }
+
+        .fa-android{
+          color: #a4c639
+        }
+
+        .fa-app-store-ios{
+          color: #0c86f3
+        }
+
+        span {
+          font-size: 1.5rem;
+        }
+      }
+
+
+      img {
+        width: auto;
+        height: 120px;
+        margin: 1rem;
+      }
+
+
+    }
+    @media only screen and (max-width: 1024px) {
+      h1{
+        font-size: 7rem;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      h1{
+        font-size: 6rem;
+      }
+    }
+    @media only screen and (max-width: 540px) {
+      h1{
+        font-size: 5rem;
+      }
+      h2{
+        font-size: 1.8rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+
+    @media only screen and (max-width: 435px) {
+      h1{
+        font-size: 4rem;
+      }
+      h2{
+        font-size: 1.8rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+
+  }
+
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba($firstColor, 0.9);
+  }
+
+}

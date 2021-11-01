@@ -1,0 +1,49 @@
+@import 'settings';
+@import 'fullpage';
+@import "header";
+@import "footer";
+@import "home";
+@import "aboutme";
+@import "privacy";
+@import "contact";
+@import "dev";
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', serif;
+  background: $firstColor;
+  color: $foreColor;
+}
+
+a {
+  color: $foreColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $highlightColor;
+    @include easeOut;
+  }
+}
+
+.view-details {
+  color: $foreColor;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 25px;
+  padding: 10px;
+  border: solid 1px $highlightColor;
+  border-radius: 12px;
+
+  span{
+    padding-left: 10px;
+  }
+
+  i {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
